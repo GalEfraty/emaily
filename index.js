@@ -30,7 +30,7 @@ mongoose
   .then(() => {
     console.log("Connected to MongoDB!");
   })
-  .catch(err => console.log("Error on start: " + err.stack));
+  .catch(err => console.log("Error cannot connect to mongoDB: " + err));
 
 if (process.env.NODE_ENV === "production") {
   //express will serve up production assets (js or css file like main.js or main.css)
